@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 0px 0px 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: willgrace;
+    src: url(willgrace.TTF);
+}
+
+@font-face {
+    font-family: chap;
+    src: url(chap.ttf);
+}
+
+.header {
+    float: left;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+
+.banner img {
+    width: 100%;
+    z-index: -1;
+    margin-top: -5px;
+}
+
+.centered {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: willgrace;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nav {
+    font-family: willgrace;
+    font-size: 2rem;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li:hover {
+    color: rgba(161,255,215,1);
+}
+
+.space {
+    margin: 9.5vw;
+}
+
+.nostyle {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.mint_bracket {
+    background-color: rgba(161,255,215,0.6);
+    padding: 50px 50px;
+    width: 50%;
+    float: right;
+    margin-top: -5px;
+}
+
+.pink_bracket {
+    background-color: rgba(219,186,196,0.6);
+    padding: 50px 50px;
+    width: 50%;
+    float: left;
+    margin-top: -5px;
+}
+
+.pink_bracket1 {
+    background-color: rgba(219,186,196,0.6);
+    padding: 50px 50px;
+    width: 50%;
+    float: left;
+    margin-top: -5px;
+}
+
+.blue_bracket {
+    background-color: rgba(121,212,232,0.6);
+    padding: 50px 50px;
+    width: 50%;
+    float: left;
+}
+
+.blue_bracket1 {
+    background-color: rgba(121,212,232,0.6);
+    padding: 50px 50px;
+    width: 50%;
+    float: left;
+    margin-top: -5px;
+}
+
+.green_bracket {
+    background-color: rgba(176,255,125,0.6);
+    padding: 50px 50px;
+    width: 50%;
+    float: right;
+}
+
+.info {
+    font-family: willgrace;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.3);
+}
+
+.info_maintext {
+    font-family: chap;
+    line-height: 2;
+}
+
+.footer {
+    text-align: center;
+    font-family: chap;
+
+}
+
+input [type=text], textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(219,186,196,1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgba(255,255,255,1);
+    padding: 12px 20px;
+    border: 1px solid rgba(219,186,196,1); 
+    cursor: pointer;
+    font-family: chap;
+    margin-bottom: 30px;
+    font-size: 1rem;
+} 
+
+input[type=submit]:hover {
+    background-color: rgba(219,186,196,0.8)
+}
+
+.contact_form {
+    font-family: chap;
+    font-size: 1rem;
+    padding: 40px;
+} 
+
+.pink_contact {
+    background-color: rgba(219,186,196,0.6);
+    width: 100%;
+    padding-top: 1px;
+    margin-top: -5px;
+    margin-bottom: -8px;
+}
+
+.pink_contact h2 , .find_us h2 {
+    font-family: willgrace;
+    padding: 10px 40px;
+}
+
+.pink_tour {
+    background-color: rgba(219,186,196,0.6);
+    width: 25%;
+    float: left;
+}
+
+.blue_tour {
+    background-color: rgba(121,212,232,0.6);
+    width: 25%;
+    float: left;
+}
+
+.mint_tour {
+    background-color: rgba(161,255,215,0.6);
+    width: 25%;
+    float: left;
+}
+
+.green_tour {
+    background-color: rgba(176,255,125,0.6);
+    width: 25%;
+    float: left;
+}
+
+.tour_list img {
+    width: 100%;
+    float: left;
+}
+
+.tour_list h3, h4 {
+    font-family: willgrace;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tour_list p {
+    font-family: chap;
+    line-height: 2;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.pink_tour , .blue_tour , .mint_tour , .green_tour {
+    opacity: 0.6;
+        -webkit-transition: opacity 1s ease-in-out;
+       -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+         -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+}
+
+.pink_tour:hover , .blue_tour:hover , .mint_tour:hover , .green_tour:hover {
+    opacity: 1;
+}
+
+/* -----MOBILE----- */
+
+@media only screen and (max-width: 767px) {
+    
+    .header {
+        z-index: 1;
+        top: 2px;
+        margin-left: -25px;
+    }
+    
+    .nav li {
+        display: block;
+        font-size: 1.2rem;
+        clear: both;
+        position: relative;
+        margin-left: -30px;
+    }
+    
+    .centered {
+        top: 45%;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .pink_bracket1 , .blue_bracket1 {
+        width: 100%;
+    }
+    
+    .pink_tour , .blue_tour , .mint_tour , .green_tour {
+        width: 100%;
+        opacity: 1;
+    }
+    
+    .pink_bracket , .blue_bracket , .mint_bracket , .green_bracket {
+        width: 100%;
+        margin-top: -5px;
+    }
+} 
+
+.hi{
+    border: 2px;
+}
